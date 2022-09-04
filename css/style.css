@@ -1,0 +1,185 @@
+:root{
+    --background-main: #1E1E1E;
+    --background-nav: #252525;
+    --white: #FFFFFF;
+    --green: #32CD32;
+    --orange: #FC9E22;
+    --white-hover: #E0E1E2;
+    --green-hover: #6FCE32;
+    --orange-hover: #F77B2E;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    background: var(--background-main);
+}
+nav{
+    background: var(--background-nav);
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+nav ul,
+#apuracao{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: .5rem;
+}
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 0.625rem;
+    font-weight: 500;
+    color: #fff;
+
+}
+nav ul li a img.nav-item{
+    height: 1.25rem;
+    width: 5vh;
+
+    margin-bottom: 0.031rem;
+}
+/* ----------- main */
+main{
+    background: var(--background-main);
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.candidato{
+    text-align: center;
+}
+.foto-candidato{
+    width: 15.625rem;
+    height: 20.833rem;
+    border-radius: 0.75rem;
+    object-fit: cover;
+    /* position: fixed; */
+}
+.nome-candidato,
+.numero-candidato{
+    color: #fff;
+}
+.nome-candidato{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.numero-candidato{
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+.teclado,
+.candidato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table tbody tr td{
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    
+    background: var(--background-nav);
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+
+    cursor: pointer;
+    
+}
+table tbody tr td:hover{
+    background: #fff;
+    color:var(--background-nav);
+}
+
+.action-buttons{
+    margin: 1rem 0 0 0;
+}
+
+button{
+    appearance: none;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+    width: 6.25rem;
+    height: 2.5rem;
+
+    border-radius: 0.75rem;
+    font-weight: 600;
+}
+
+.btn-white{
+    background: var(--white);
+    color: var(--background-main);
+}
+.btn-white:hover{
+    background: var(--white-hover);
+}
+.btn-green{
+    background: var(--green);
+    color: var(--white);
+}
+.btn-green:hover{
+    background: var(--green-hover);
+}
+.btn-orange{
+    background: var(--orange);
+    color: var(--white);
+}
+.btn-orange:hover{
+    background: var(--orange-hover);
+}
+.title{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.grilo,
+.carrara,
+.branco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    padding-bottom: 4rem;
+}
+
+
+.candidato-foto-circle{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.align-right{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.margin-top{
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}

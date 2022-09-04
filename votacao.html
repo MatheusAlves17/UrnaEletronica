@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urna eletrônica</title>
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"  rel="stylesheet"/>
+    
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img
+              src="./img/candidato.svg"
+              alt=""
+              class="nav-item"
+            />Candidatos</a
+          >
+        </li>
+        <li>
+          <a href="votacao.html"><img src="./img/logotipo.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#apuracao"
+            ><img src="./img/apuracao.svg" alt="" class="nav-item" />Apuração</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <article class="candidato" id="candidato">
+        <img src="img/default.svg" alt="" class="foto-candidato" id="foto-candidato"/>
+        <!-- <img src="" alt=""> -->
+        <div id="foto-candidato">
+          <img src="" alt="">
+        </div>
+        <div class="canditado-informacoes">
+          <p class="numero-candidato" id="numero-candidato"></p>
+          <p class="nome-candidato" id="nome-candidato"></p>
+        </div>
+      </article>
+      <article class="teclado">
+        <table>
+          <tbody>
+            <tr>
+              <td onclick="capturaNumeroCandidato(1)">1</td>
+              <td onclick="capturaNumeroCandidato(2)">2</td>
+              <td onclick="capturaNumeroCandidato(3)">3</td>
+            </tr>
+            <tr>
+              <td onclick="capturaNumeroCandidato(4)">4</td>
+              <td onclick="capturaNumeroCandidato(5)">5</td>
+              <td onclick="capturaNumeroCandidato(6)">6</td>
+            </tr>
+            <tr>
+              <td onclick="capturaNumeroCandidato(7)">7</td>
+              <td onclick="capturaNumeroCandidato(8)">8</td>
+              <td onclick="capturaNumeroCandidato(9)">9</td>
+            </tr>
+            <tr>
+              <td colspan="3" onclick="capturaNumeroCandidato(0)">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="action-buttons">
+          <button class="btn-white" onclick="branco()">BRANCO</button>
+          <button class="btn-green" onclick="confirmaCandidato()">
+            CONFIRMA
+          </button>
+          <button class="btn-orange" onclick="corrigeNumeroCandidato()">
+            CORRIGE
+          </button>
+        </div>
+      </article>
+    </main>
+    <h1 class="title">Apuração</h1>
+    <div id="apuracao">
+      <div class="grilo" id="grilo">
+          <img src="https://1.bp.blogspot.com/-DO4VzpqzlRw/Xg5hz36wGGI/AAAAAAAAWL0/y7_spVZZcFMm3YQczJnnXEzPxVO2LWGjQCLcBGAsYHQ/s1600/Blog%2BNovidades%2BOnLine%2B-%2Bassets_fotos_810_matheus-nachtergaele-joao-grilo-me-ensinou-a-ser-feliz-na-tristeza-a-rir-nas-horas-mais-perigosas-e-desgracadas-da-vida-c6131d45e889.jpg" alt="João Grilo" class="candidato-foto-circle">
+        <p class="nome-candidato">João Grilo</p>
+        <p class="nome-candidato"><strong>Votos: </strong><span id="qtdVotosGrilo"></span></p>
+      </div>
+  
+      <div class="carrara" id="carrara">
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-OjnUdrOst54%2FU6tAg2OlycI%2FAAAAAAAAABE%2FTY7aMQLmHZw%2Fs1600%2Fagostinho.jpg&f=1&nofb=1" alt="Augustinho Carrara" class="candidato-foto-circle">
+        <p class="nome-candidato">Augustinho Carrara</p>
+        <p class="nome-candidato"><strong>Votos: </strong><span id="qtdVotosCarrara"></span></p>
+      </div>
+
+      <div class="carrara" id="carrara">
+          <img src="img/default.svg" class="candidato-foto-circle">
+        <p class="nome-candidato">Brancos/nulos</p>
+        <p class="nome-candidato"><strong>Votos: </strong><span id="qtdVotosBrancos"></span></p>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
