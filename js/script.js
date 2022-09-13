@@ -9,7 +9,7 @@ let candidatos = [
     {
         id: 2,
         foto: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-OjnUdrOst54%2FU6tAg2OlycI%2FAAAAAAAAABE%2FTY7aMQLmHZw%2Fs1600%2Fagostinho.jpg&f=1&nofb=1',
-        name: 'Augustinho Carrara',
+        name: 'Agostinho Carrara',
         numero: '1895',
         votos: 0
     },
